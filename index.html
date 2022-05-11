@@ -2,11 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Astro Weight Calculator</title>
   </head>
   <body>
      <!-- Write your markup here  -->
+     
+     <!-- custom alerts -->
+     <div id="alert1" style="display: none">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Error: Cannot submit empty field(s)
+    </div>
 
+    <div id="alert2" style="display: none">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Success: New Planet Added!
+    </div>
+     
+       <div class="container">
+          <h2 class="title">Astro Weight Calculator</h2>
+         </div>
+
+       <div class="container">
+        <div class="child">
+        <label for="user-weight">Enter Your Weight:</label><br>
+         <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+         </div>
+
+         <div class="child">
+          <label for="planets">Select a Planet</label><br>
+           <select id="planets">
+            <option id="planet-options"></option>
+          </select><br>
+          <input type="checkbox" id="pluto" name="pluto" value="pluto" onclick="removePluto()">
+          <label for="pluto">Remove Pluto</label>
+        </div>
+
+        <div class="child">
+          <label for="planet-name">Add a New Planet</label><br/>
+          <input id="planet-name" type="text" placeholder="Planet Name" />
+          <input id="planet-weight" type="text" placeholder="Weight Modifier" /><br/>
+          <button id="add-planet" onclick="addPlanet()">Add Planet</button>
+        </div>
+
+        </div>
+
+        <div class="container">
+          <div class="child">
+            <p id="output"></p>
+            <button id="calculate-button" onclick="handleClickEvent()">Calculate</button>
+        </div>
+        </div>
+     
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,0 +1,115 @@
+* {
+  font-family: 'Goldman', cursive;
+  font-size: large;
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin: 20px;    
+  }
+  
+  .child { 
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+
+.title {
+    font-size: 80px;
+    color: black;
+    text-shadow: 0 2px 5px #ff4800, 1px 0 2px #ffffff;
+  }
+
+#user-weight {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #ff4800;
+}
+
+::placeholder {
+  color: #ee8e68;
+}
+
+#planets, #planet-name, #planet-weight {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  width: 65%;
+  background-color: #ff4800;
+}
+
+button {
+  background-color: black;
+  border: 1px solid #ff4800;
+  border-radius: 5px;
+  color: #ff4800;
+}
+
+button:hover {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  transition: 0.7s;
+}
+
+#add-planet {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#output {
+  background-color: rgba(0,0,0,0.5);
+  padding: 25px;
+  border: 2px dashed #ff4800;
+  border-radius: 5px;
+  font-size: x-large;
+  color: #ff4800;
+}
+
+#calculate-button {
+  padding: 5px;
+  margin-top: 50px;
+  width: 30%;
+  height: 30%;
+}
+
+/* The alert message box */
+#alert1 {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#alert2 {
+  padding: 10px;
+  background-color: #3bb950;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
