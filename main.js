@@ -65,7 +65,7 @@ function handleClickEvent(e) {
         // console.log(planetName);
 
     // 5. Create a variable called result and assign the value of the new calculated weight. 
-    let result = calculateWeight(userWeight, planetName).toFixed(2);
+    let result = calculateWeight(userWeight, planetName);
         console.log("Planet name: " + planetName);
         console.log("Result: " + result);
 
