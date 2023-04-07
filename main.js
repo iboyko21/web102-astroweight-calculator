@@ -1,4 +1,4 @@
-var planets = [ 
+let planets = [ 
     ['Pluto', 0.06], 
     ['Neptune', 1.148], 
     ['Uranus', 0.917], 
@@ -53,7 +53,6 @@ function removePluto(e) {
     } else {
         generateDropDown();
     }
-    console.log(planets);
 }
 
 function handleClickEvent(e) {
@@ -66,8 +65,6 @@ function handleClickEvent(e) {
 
     // 5. Create a variable called result and assign the value of the new calculated weight. 
     let result = calculateWeight(userWeight, planetName);
-        console.log("Planet name: " + planetName);
-        console.log("Result: " + result);
 
     // 6. Write code to display the message shown in the screenshot. 
     return document.getElementById("output").innerHTML = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
