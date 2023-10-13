@@ -37,8 +37,8 @@ function generateDropDown() {
 
 generateDropDown();
 
+// 2. Write the code to return the correct weight
 function calculateWeight(weight, planetName) { 
-    // 2. Write the code to return the correct weight
     for (i=0; i < planets.length; i++) {
         if (planets[i][0] === planetName) {
             return planets[i][1] * weight;
